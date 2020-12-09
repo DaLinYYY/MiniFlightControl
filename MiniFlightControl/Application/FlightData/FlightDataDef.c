@@ -5,6 +5,16 @@
  * @Description:  
  */
 
-
+#include <stddef.h>
+#include <string.h>
 #include "FlightDataDef.h"
 
+
+static MPU6050_t    GY521_DEFAULT_PARAM;
+
+
+Flight_t  FLIGHTT_PARAM = {
+		.GY521	= &GY521_DEFAULT_PARAM
+};
+
+Flight_t * Flight = &FLIGHTT_PARAM;

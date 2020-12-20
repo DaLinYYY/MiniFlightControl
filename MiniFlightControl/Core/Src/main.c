@@ -132,10 +132,10 @@ int main(void)
     	pwmVal = 0;
     	dir++;
     }
-//    TIM4->CCR1 = pwmVal;
-//    TIM4->CCR2 = pwmVal;
-//    TIM4->CCR3 = pwmVal;
-//    TIM4->CCR4 = pwmVal;
+   TIM4->CCR1 = pwmVal;
+   TIM4->CCR2 = pwmVal;
+   TIM4->CCR3 = pwmVal;
+   TIM4->CCR4 = pwmVal;
     TIM4->CCR1 = pwmVal;
     TIM4->CCR2 = 0;
     TIM4->CCR3 = 0;
